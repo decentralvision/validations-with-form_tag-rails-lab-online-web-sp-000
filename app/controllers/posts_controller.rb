@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   def new
     @post = Post.new
   end
-  
+
   def create
     @post = Post.new(post_params)
     if @post.save
@@ -15,7 +15,7 @@ class PostsController < ApplicationController
       render :new
     end
   end
-  
+
   def edit
     @post = Post.find(params[:id])
   end
