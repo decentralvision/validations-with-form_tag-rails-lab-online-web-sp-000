@@ -1,13 +1,13 @@
-<h2>Create an Author</h2>
-<%= form_tag authors_path, method: "post" do %>
+<h2>Create an Post</h2>
+<%= form_tag posts_path, method: "post" do %>
   <div class="field">
-    <%= label_tag "name", "Name" %>
-    <%= text_field_tag "name" %>
+    <%= label_tag "title", "Title" %>
+    <%= text_field_tag "title" %>
   </div>
 
   <div class="field">
-    <%= label_tag "email", "Email" %>
-    <%= text_field_tag "email" %>
+    <%= label_tag "category", "Category" %>
+    <%= text_field_tag "category" %>
   </div>
 
   <div class="field">
