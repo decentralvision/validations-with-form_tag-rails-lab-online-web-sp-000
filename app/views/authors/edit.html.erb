@@ -7,12 +7,8 @@
 
   <div class="field">
     <%= label_tag "email", "Email" %>
-    <p>Must be either "Fiction" or "Non-Fiction".</p>
-    <%= text_field_tag "category", @author.category %>
-    <p>
-      Please type carefully as our top scientists are working around the clock to
-      enable state-of-the-art dropdown technology for this form field.
-    </p>
+    <%= text_field_tag "email", @author.email %>
+
   </div>
 
   <div class="field">
