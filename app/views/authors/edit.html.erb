@@ -1,5 +1,6 @@
 <h2>Editing "<%= @author.name %>"</h2>
 <%= form_tag author_path(@author), method: "patch" do %>
+<% if @author.errors.any? %>
   <div class="field">
     <%= label_tag "name", "Name" %>
     <%= text_field_tag "name", @author.name %>
