@@ -24,7 +24,7 @@ class AuthorsController < ApplicationController
       render :edit
     end
   end
-  
+
   private
 
   def author_params
