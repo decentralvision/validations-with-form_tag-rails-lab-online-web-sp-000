@@ -14,8 +14,9 @@ class AuthorsController < ApplicationController
   end
 
   def update
-    
+    @author = Author.find(params[:id])
   end
+  
   private
 
   def author_params
